@@ -100,7 +100,7 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_electr",
     "object": {
       "rows": [
@@ -140,7 +140,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_home_electr",
     "object": {
       "rows": [
@@ -179,7 +179,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_tox",
     "object": {
       "rows": [
@@ -221,7 +221,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_nuke_gas",
     "object": {
       "rows": [
@@ -263,7 +263,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_dog",
     "object": {
       "rows": [
@@ -303,7 +303,7 @@
   },
    {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_dog1",
     "object": {
       "rows": [
@@ -344,7 +344,7 @@
   },
    {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_tushkan",
     "object": {
       "rows": [
@@ -385,7 +385,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_Psevdogigantrofl",
     "object": {
       "rows": [
@@ -426,7 +426,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_Psevdogigant",
     "object": {
       "rows": [
@@ -467,7 +467,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_himera",
     "object": {
       "rows": [
@@ -509,7 +509,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_barsic",
     "object": {
       "rows": [
@@ -550,7 +550,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_rat",
     "object": {
       "rows": [
@@ -591,7 +591,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_tark",
     "object": {
       "rows": [
@@ -631,7 +631,7 @@
   },
    {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_nuke_gasdog",
     "object": {
       "rows": [
@@ -676,7 +676,7 @@
   },
    {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_nuke_gasdog1",
     "object": {
       "rows": [
@@ -721,7 +721,7 @@
   },
    {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_nuke_gastushkan",
     "object": {
       "rows": [
@@ -766,7 +766,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_nuke_gastark",
     "object": {
       "rows": [
@@ -811,7 +811,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "update_mapgen_id": "mx_anom_fire",
     "object": {
       "rows": [

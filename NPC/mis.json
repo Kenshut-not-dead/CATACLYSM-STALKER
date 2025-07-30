@@ -1,5 +1,49 @@
 [
 {
+    "id": "11112312312",
+    "type": "mission_definition",
+    "name": { "str": "Reach Refugee Center" },
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 1,
+    "value": 0,
+    "start": "reveal_refugee_center",
+    "origins": [ "ORIGIN_COMPUTER" ],
+    "destination": "evac_center_18",
+    "end": { "effect": [ { "u_add_var": "found_refugee_center", "value": "yes" } ] }
+  }
+,
+  {
+    "id": "достать_5_голов_тушкана",
+    "type": "mission_definition",
+    "name": { "str": "КОНТРАКТ - Принести 5 голов тушканов" },
+    "description": "Сидоровичу понадобилось целых <color_light_blue>5 голов тушканов</color>, давольно не обычный заказ.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 2,
+    "value": 50000,
+    "item": "ks_head_tushkan",
+	"count": 5,
+    "end": {
+      "effect": [
+        { "u_spawn_item": "деньги", "count": 1000 },
+	     { "math": [ "n_npc_trust()", "+=", "1" ] },
+		 { "u_sell_item": "ks_head_tushkan", "count": 5 },
+		{ "u_add_var": "тушкан5", "value": "yes" }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Головы тушканов",
+      "offer": "Мне тут понадобилось 5 голов тушканов, заплачу тебе 1000 моей валюты.",
+      "accepted": "Давай только побыстрее.",
+      "rejected": "Ну как хочешь.",
+      "advice": "просто отрежь им головы, окей?",
+      "inquire": "Ну как, принес?",
+      "success": "Отлично, вот твои деньги.",
+      "success_lie": "ТЫ ЧТО ПИЗДИШЬ МНЕ ТУТ?!",
+      "failure": "КАК ТЫ БЛЯТЬ УМУДРИЛСЯ?!"
+    }
+  },
+  {
     "id": "убитьбандитов",
     "type": "mission_definition",
     "name": { "str": "КОНТРАКТ - Убить бандитов" },
@@ -48,17 +92,16 @@
         "furniture": { "a": "f_ash" },
         "traps": { "F": "tr_fur_rollmat", "R": "tr_rollmat" },
         "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
-        "place_loot": [
-          { "group": "cannedfood", "x": [ 6, 18 ], "y": [ 3, 15 ], "chance": 100 },
-          { "group": "alcohol_bottled_canned", "x": [ 6, 18 ], "y": [ 3, 15 ], "repeat": 5, "chance": 75 },
-          { "group": "trash_forest", "x": [ 6, 18 ], "y": [ 3, 15 ], "repeat": 2, "chance": 75 },
-          { "group": "stash_drugs", "x": [ 6, 18 ], "y": [ 3, 15 ], "chance": 75 },
-          { "group": "dresser", "x": [ 9, 10 ], "y": [ 10, 14 ], "chance": 75 },
-          { "group": "softdrugs", "x": [ 9, 10 ], "y": [ 10, 14 ], "chance": 50 },
-          { "group": "camping", "x": [ 9, 10 ], "y": [ 10, 14 ], "chance": 75 },
-          { "group": "casings", "x": [ 10, 15 ], "y": [ 15, 18 ], "repeat": 5, "chance": 100 }
-          
-        ],
+		 "place_loot": [  
+		 { "group": "cannedfood", "x": [ 6, 18 ], "y": [ 3, 15 ], "chance": 100 }, 
+		 { "group": "stash_drugs", "x": [ 6, 18 ], "y": [ 3, 15 ], "chance": 75 },
+		 { "group": "dresser", "x": [ 9, 10 ], "y": [ 10, 14 ], "chance": 75 },
+		 { "group": "softdrugs", "x": [ 9, 10 ], "y": [ 10, 14 ], "chance": 50 },
+         { "group": "camping", "x": [ 9, 10 ], "y": [ 10, 14 ], "chance": 75 },
+		 { "group": "casings", "x": [ 10, 15 ], "y": [ 15, 18 ], "repeat": 5, "chance": 100 },
+		 { "group": "alcohol_bottled_canned", "x": [ 6, 18 ], "y": [ 3, 15 ], "repeat": 5, "chance": 75 } 
+		 
+		 ],
         "place_npcs": [
           { "class": "bandit", "x": 15, "y": 7 },
           { "class": "thug", "x": 12, "y": 5 },
@@ -69,8 +112,8 @@
     "end": {
       "effect": [
         { "u_spawn_item": "деньги", "count": 2000 },
-	     { "arithmetic": [ { "npc_val": "npc_trust" }, "++" ] }, 
-        { "u_add_var": "убитьсталкера", "type": "mission", "context": "flag", "value": "yes" }
+	    { "math": [ "n_npc_trust()", "+=", "1" ] },
+		{ "u_add_var": "убитьсталкера", "value": "yes" }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -85,37 +128,6 @@
       "success": "Отлично, вот твои деньги ",
       "success_lie": "ТЫ МНЕ ВРЕШЬ?!",
       "failure": "НУ ПИЗДЕЦ! ТЫ КАК ВООБЩЕ УМУДРИЛСЯ?!"
-    }
-  },
-  {
-    "id": "достать_5_голов_тушкана",
-    "type": "mission_definition",
-    "name": { "str": "КОНТРАКТ - Принести 5 голов тушканов" },
-    "description": "Сидоровичу понадобилось целых <color_light_blue>5 голов тушканов</color>, давольно не обычный заказ.",
-    "goal": "MGOAL_FIND_ITEM",
-    "difficulty": 2,
-    "value": 50000,
-    "item": "ks_head_tushkan",
-	"count": 5,
-    "end": {
-      "effect": [
-        { "u_spawn_item": "деньги", "count": 1000 },
-	     { "arithmetic": [ { "npc_val": "npc_trust" }, "++" ] }, 
-		 { "u_sell_item": "ks_head_tushkan", "count": 5 },
-        { "u_add_var": "тушкан5", "type": "mission", "context": "flag", "value": "yes" }
-      ]
-    },
-    "origins": [ "ORIGIN_SECONDARY" ],
-    "dialogue": {
-      "describe": "Головы тушканов",
-      "offer": "Мне тут понадобилось 5 голов тушканов, заплачу тебе 1000 моей валюты.",
-      "accepted": "Давай только побыстрее.",
-      "rejected": "Ну как хочешь.",
-      "advice": "просто отрежь им головы, окей?",
-      "inquire": "Ну как, принес?",
-      "success": "Отлично, вот твои деньги.",
-      "success_lie": "ТЫ ЧТО ПИЗДИШЬ МНЕ ТУТ?!",
-      "failure": "КАК ТЫ БЛЯТЬ УМУДРИЛСЯ?!"
     }
   },
   {
@@ -175,8 +187,8 @@
     "end": {
       "effect": [
         { "u_spawn_item": "деньги", "count": 4000 },
-	     { "arithmetic": [ { "npc_val": "npc_trust" }, "++" ] }, 
-        { "u_add_var": "убитьмонолитовца", "type": "mission", "context": "flag", "value": "yes" }
+	    { "math": [ "n_npc_trust()", "+=", "1" ] },
+		{ "u_add_var": "убитьмонолитовца", "value": "yes" }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],

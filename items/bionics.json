@@ -108,19 +108,19 @@
   {
     "id": "bio_st_dex_enhancer",
     "type": "bionic",
-    "name": { "str": "Улучшение тела О-Сознания тип (ловкость)" },
+    "name": { "str": "Улучшение тела О-Сознания тип (ловкость) MK-I" },
     "description": "Особое устройство, сделанное из артефакта (заряд). Улучшает скорость реакции.",
     "occupied_bodyparts": [ [ "torso", 6 ], [ "arm_l", 4 ], [ "arm_r", 4 ], [ "leg_l", 8 ], [ "leg_r", 8 ] ],
-    "stat_bonus": [ [ "DEX", 2 ] ],
+    "enchantments": [ { "values": [ { "value": "DEXTERITY", "add": 2 } ] } ],
     "flags": [ "BIONIC_NPC_USABLE" ]
   },
   {
     "id": "bio_st_dex_enhancer1",
     "type": "bionic",
-    "name": { "str": "Улучшение тела О-Сознания тип (ловкость)" },
+    "name": { "str": "Улучшение тела О-Сознания тип (ловкость) MK-II" },
     "description": "Особое устройство, сделанное из артефакта (разряды). Улучшает скорость реакции.",
     "occupied_bodyparts": [ [ "torso", 6 ], [ "arm_l", 4 ], [ "arm_r", 4 ], [ "leg_l", 8 ], [ "leg_r", 8 ] ],
-    "stat_bonus": [ [ "DEX", 4 ] ],
+	"enchantments": [ { "values": [ { "value": "DEXTERITY", "add": 4 } ] } ],
     "flags": [ "BIONIC_NPC_USABLE" ]
   },
   {
@@ -129,25 +129,25 @@
     "name": { "str": "Улучшение тела О-Сознания тип (сила)" },
     "description": "Особое устройство, сделанное из артефакта (вулкан). Улучшает физическое состояние.",
     "occupied_bodyparts": [ [ "torso", 6 ], [ "arm_l", 4 ], [ "arm_r", 4 ], [ "leg_l", 8 ], [ "leg_r", 8 ] ],
-    "stat_bonus": [ [ "STR", 2 ] ],
+	"enchantments": [ { "values": [ { "value": "STRENGTH", "add": 2 } ] } ],
     "flags": [ "BIONIC_NPC_USABLE" ]
   },
   {
     "id": "bio_st_int_enhancer",
     "type": "bionic",
-    "name": { "str": "Улучшение тела О-Сознания тип (интеллект)" },
+    "name": { "str": "Улучшение тела О-Сознания тип (интеллект) MK-I" },
     "description": "Сопроцессор помогающий обрабатывать информацию быстрее.",
     "occupied_bodyparts": [ [ "head", 1 ] ],
-    "stat_bonus": [ [ "INT", 4 ] ],
+	"enchantments": [ { "values": [ { "value": "INTELLIGENCE", "add": 4 } ] } ],
     "flags": [ "BIONIC_NPC_USABLE" ]
   },
   {
     "id": "bio_st_int_enhancer1",
     "type": "bionic",
-    "name": { "str": "Улучшение тела О-Сознания тип (интеллект) МК2" },
+    "name": { "str": "Улучшение тела О-Сознания тип (интеллект) MK-II" },
     "description": "Сопроцессор помогающий обрабатывать информацию быстрее.",
     "occupied_bodyparts": [ [ "head", 2 ] ],
-    "stat_bonus": [ [ "INT", 6 ] ],
+	"enchantments": [ { "values": [ { "value": "INTELLIGENCE", "add": 6 } ] } ],
     "flags": [ "BIONIC_NPC_USABLE" ]
   },
   {
@@ -156,7 +156,7 @@
     "name": { "str": "Улучшение тела О-Сознания тип (восприятие)" },
     "description": "Особое устройство, сделанное из артефакта (консерва). Улучшает зрение.",
     "occupied_bodyparts": [ [ "eyes", 2 ] ],
-    "stat_bonus": [ [ "PER", 2 ] ],
+	"enchantments": [ { "values": [ { "value": "PERCEPTION", "add": 2 } ] } ],
     "flags": [ "BIONIC_NPC_USABLE" ]
   },
   {

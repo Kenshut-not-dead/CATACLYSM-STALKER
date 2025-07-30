@@ -1,7 +1,7 @@
 [
 {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункерсидор" ],
 	"weight": 700,
     "object": {
@@ -40,7 +40,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_крышасидор" ],
     "weight": 500,
     "object": {
@@ -80,7 +80,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_низсидор" ],
     "weight": 500,
     "object": {
@@ -118,7 +118,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_низсидор2" ],
     "weight": 500,
     "object": {
@@ -156,7 +156,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_сидоровичь" ],
     "weight": 500,
     "object": {

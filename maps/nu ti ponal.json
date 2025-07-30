@@ -25,7 +25,7 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер" ],
 	"weight": 700,
     "object": {
@@ -64,7 +64,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер" ],
 	"weight": 500,
     "object": {
@@ -103,7 +103,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_крыша" ],
     "weight": 500,
     "object": {
@@ -143,7 +143,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_низ" ],
     "weight": 500,
     "object": {
@@ -181,7 +181,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
 	"om_terrain": [ "бункер_сталкер_низ" ],
     "weight": 500,
     "object": {

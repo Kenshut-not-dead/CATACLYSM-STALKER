@@ -8,7 +8,6 @@
     "known_by_u": false,
     "size": 100,
     "power": 100,
-    "food_supply": 230400,
     "wealth": 45000000,
     "relations": {
       "hells_raiders": {"kill on sight": true},
@@ -31,8 +30,8 @@
     "known_by_u": false,
     "size": 100,
     "power": 100,
-    "food_supply": 230400,
     "wealth": 45000000,
+	"fac_food_supply": [ [ 0, { "calories": 270000000, "vitamins": { "iron": 8640, "calcium": 8640, "vitC": 8640 } } ] ],
     "relations": {
       "free_merchants": { "knows your voice": true },
       "old_guard": { "knows your voice": true },
@@ -52,8 +51,8 @@
     "known_by_u": false,
     "size": 100,
     "power": 100,
-    "food_supply": 230400,
     "wealth": 45000000,
+	"fac_food_supply": [ [ 0, { "calories": 270000000, "vitamins": { "iron": 8640, "calcium": 8640, "vitC": 8640 } } ] ],
     "relations": {
       "free_merchants": { "knows your voice": true },
       "old_guard": { "knows your voice": true },
@@ -71,8 +70,8 @@
     "known_by_u": true,
     "size": 100,
     "power": 100,
-    "food_supply": 230400,
     "wealth": 45000000,
+	"fac_food_supply": [ [ 0, { "calories": 270000000, "vitamins": { "iron": 8640, "calcium": 8640, "vitC": 8640 } } ] ],
     "relations": {
       "hells_raiders": {
         "kill on sight": false,
