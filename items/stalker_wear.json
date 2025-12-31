@@ -526,6 +526,57 @@
     "material_thickness": 3,
     "flags": ["POCKETS", "WATER_FRIENDLY","OUTER", "STURDY" ],
 	"armor": [ { "encumbrance": [ 2, 20 ], "coverage": 100, "covers": [ "torso"]} ]
+  },
+  {
+    "id": "Кожан_ремень_арт",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "name": { "str": "Сталкерский кожанный ремень" },
+    "description": "Кожанный ремень, адаптированный для ношения артефактов. Максимум два артефакта",
+    "weight": "150 g",
+    "volume": "350 ml",
+    "price": "20 USD",
+    "price_postapoc": "1 USD",
+    "repairs_like": "leather",
+    "material": [ { "type": "leather", "portion": 65 }, { "type": "steel", "portion": 35 } ],
+    "symbol": "[",
+    "color": "brown",
+    "material_thickness": 2,
+    "pocket_data": [
+      {
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "200 g",
+        "max_item_length": "70 cm",
+        "moves": 1000,
+        "description": "Специальный разъем для артефакта, довольно тугой.",
+        "flag_restriction": [ "Арт_контейнер" ]
+      },
+      {
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "200 g",
+        "max_item_length": "70 cm",
+        "moves": 1000,
+        "description": "Clipped directly to back of the belt.",
+        "flag_restriction": [ "Арт_контейнер" ]
+      }
+    ],
+    "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY" ],
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "coverage": 50,
+        "specifically_covers": [ "torso_waist" ],
+        "volume_encumber_modifier": 0.5,
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2 },
+          { "type": "steel", "covered_by_mat": 20, "thickness": 0.5 }
+        ]
+      }
+    ]
   }
   
 ]

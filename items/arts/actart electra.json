@@ -14,7 +14,26 @@
     "material_thickness": 0,
 	"max_worn": 1,
     "description": "Браслет сделанный из артефакта (Пустышка электрическая), радиоктивен, но организм медленнее устаёт.",
-    "flags": ["STURDY", "BLOCK_WHILE_WORN",  "WATER_FRIENDLY" ],
+    "flags": ["STURDY", "BLOCK_WHILE_WORN","CANT_WEAR","Арт_контейнер", "WATER_FRIENDLY" ],
+	"passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "multiply": 0.15, "add": 5 } ] } ]
+    
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "id": "testtttttttttttttt",
+    "name": { "str": "браслет из артефакта test (Пустышка электрическая)", "str_pl": "браслет из артефакта (Пустышка электрическая)" },
+	"weight": "100 g",
+    "volume": "250 ml",
+    "price": "200 USD",
+    "to_hit": -1,
+    "material": [ "steel", "leather" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "material_thickness": 0,
+	"max_worn": 1,
+    "description": "Браслет сделанный из артефакта (Пустышка электрическая), радиоктивен, но организм медленнее устаёт.",
+    "flags": ["STURDY", "BLOCK_WHILE_WORN", "WATER_FRIENDLY" ],
 	"passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "multiply": 0.15, "add": 5 } ] } ]
     
   },

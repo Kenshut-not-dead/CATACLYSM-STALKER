@@ -71,6 +71,25 @@
     "material_thickness": 0,
 	"max_worn": 1,
     "description": "Браслет сделанный из артефакта (Светляк), немного помогает организму.",
+    "flags": ["STURDY", "BLOCK_WHILE_WORN","CANT_WEAR","Арт_контейнер",  "WATER_FRIENDLY" ],
+    
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_HP", "add": 1} ] } ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "id": "testsdtesetes",
+    "name": { "str": "браслет из артефактов test (Светляк)", "str_pl": "браслет из артефактов (Светляк)" },
+	"weight": "100 g",
+    "volume": "250 ml",
+    "price": "200 USD",
+    "to_hit": -1,
+    "material": [ "steel", "leather" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "material_thickness": 0,
+	"max_worn": 1,
+    "description": "Браслет сделанный из артефакта (Светляк), немного помогает организму.",
     "flags": ["STURDY", "BLOCK_WHILE_WORN",  "WATER_FRIENDLY" ],
     
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_HP", "add": 1} ] } ]
